@@ -34,7 +34,7 @@ namespace SafeAndClean.Controllers
             //var lstIp = ipHostEntry.A
             return Ok(new TestModel()
             {
-                DeviceName = ipHostEntry.ToString(),
+                DeviceName = ipHostEntry.HostName,
                 ListDeviceIP = lstDeviceIP
             });
         }
